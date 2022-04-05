@@ -1,0 +1,42 @@
+.hero-main {
+  display: flex;
+  margin: 2rem;
+}
+.hero-img {
+  width: 50%;
+  flex-shrink: 0;
+}
+.hero-container {
+  margin: 3rem 4rem;
+}
+.title {
+  margin: 2rem;
+}
+.title-highlight {
+  color: var(--action-color);
+}
+.hero-section {
+  margin-top: 4rem;
+}
+.hero-sub-title {
+  color: var(--action-color);
+  margin-bottom: 1rem;
+}
+.hero-detail {
+  width: 70%;
+  font-size: 1.2rem;
+}
+.sub-hero-btn {
+  /* width: 100%; */
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--action-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}

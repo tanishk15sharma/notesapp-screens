@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Hurricane&family=Open+Sans&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --primary-color: #fefefe;
+  --secondary-text: #f0f0f0;
+
+  --action-color: #b38b59;
+  --gradient-color: #113e21;
+  --background-secondary-color: #212121;
+
+  --error-color: #ef4444;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+a {
+  color: #000;
+}
