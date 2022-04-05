@@ -96,8 +96,11 @@ nav {
 .sections-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 .note-body {
   margin: 0.5rem 0rem;
+}
+.active {
+  color: black;
 }
