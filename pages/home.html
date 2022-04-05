@@ -24,8 +24,7 @@
           <ul class="sidebar">
             <li>
               <span class="material-icons icon"> home </span>
-
-              HOME
+              <a href="./home.html"> HOME </a>
             </li>
             <li>
               <span class="material-icons icon">label </span>
@@ -48,9 +47,37 @@
           <button class="note-btn">CREATE NEW NOTE</button>
         </aside>
         <main>
-          <input type="text" placeholder="search" class="search-bar" />
+          <div class="relative">
+            <input type="text" placeholder="search" class="search-bar" />
+            <span class="material-icons filter-icon"> filter_alt </span>
+          </div>
+          <div class="filters-wrapper" id="filterBox">
+            <h3>SORT AND FILTER NOTES</h3>
+            <div class="filter-container">
+              <h4>SORT BY</h4>
+              <span class="filter-input">
+                <input type="radio" name="sort" id="new" />
+                <label for="new">Newest First</label>
+              </span>
+              <span class="filter-input">
+                <input type="radio" name="sort" id="old" />
+                <label for="old">Oldest First</label>
+              </span>
+
+              <h4>FILTER BY</h4>
+              <span class="filter-input">
+                <input type="radio" name="filter" id="priority" />
+                <label for="priority">Priority</label>
+              </span>
+              <span class="filter-input">
+                <input type="radio" name="filter" id="label" />
+                <label for="label">Label</label>
+              </span>
+            </div>
+          </div>
           <div class="sections-wrapper">
-            <section>
+            <h3>PINNED</h3>
+            <section class="bg-1">
               <div class="note-nav">
                 <h3 class="note-title">Empty Note</h3>
                 <div>
@@ -70,7 +97,7 @@
             </section>
             <section>
               <div class="note-nav">
-                <h3 class="note-title">Empty Note</h3>
+                <h3 class="note-title">Empty Title</h3>
                 <div>
                   <span class="material-icons icon"> push_pin </span>
                 </div>
@@ -87,9 +114,40 @@
                 </div>
               </div>
             </section>
+            <h3>OTHERS</h3>
+            <section class="bg-4">
+              <div class="note-nav">
+                <h3 class="note-title">Empty Title</h3>
+                <div>
+                  <span class="material-icons icon"> push_pin </span>
+                </div>
+              </div>
+              <div class="note-body">
+                Body of the note of note , user can write notes and keep them
+                here and choose background colour of their own choice .
+              </div>
+              <div class="note-footer">
+                <span>05/04/2022</span>
+                <div>
+                  <span class="material-icons icon"> edit </span>
+                  <span class="material-icons icon"> palette </span>
+                  <span class="material-icons icon">label </span>
+                  <span class="material-icons icon"> archive </span>
+                  <span class="material-icons icon"> delete </span>
+                </div>
+              </div>
+            </section>
           </div>
         </main>
       </div>
     </div>
+    <script>
+      const filterIcon = document.querySelector(".filter-icon");
+      const filterBox = document.querySelector("#filterBox");
+      console.log(filterBox);
+      filterIcon.addEventListener("click", () => {
+        filterBox.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>

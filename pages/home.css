@@ -42,7 +42,7 @@ main {
   width: 60%;
 }
 .search-bar {
-  width: 100%;
+  width: 94%;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -103,4 +103,45 @@ nav {
 }
 .active {
   color: black;
+}
+.filter-container {
+  display: flex;
+  flex-direction: column;
+}
+.filter-icon {
+  background-color: var(--gradient-color);
+  color: var(--primary-color);
+  padding: 0.55rem 0.9rem;
+  right: 1%;
+  position: absolute;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.filter-icon:hover {
+  background-color: #247c42;
+}
+.relative {
+  position: relative;
+}
+.filters-wrapper {
+  position: absolute;
+  border: 2px solid var(--gradient-color);
+  z-index: 3;
+  right: 6.4%;
+  top: 23%;
+  background-color: var(--secondary-text);
+  padding: 1rem;
+  width: 20%;
+  display: none;
+}
+.show {
+  display: block;
+}
+.filters-wrapper h3 {
+  border-bottom: 2px solid var(--action-color);
+  margin-bottom: 1rem;
+}
+.filter-input {
+  margin-left: 2rem;
+  margin-top: 0.3rem;
 }
