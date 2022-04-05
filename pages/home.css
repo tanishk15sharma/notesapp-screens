@@ -1,0 +1,103 @@
+.note-container {
+  margin: 2rem 5rem;
+}
+.wrapper {
+  display: flex;
+  padding: 2rem 0rem;
+  justify-content: space-between;
+}
+aside {
+  width: 26%;
+}
+.note-btn {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: none;
+  background-color: var(--gradient-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bolder;
+}
+.note-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--gradient-color);
+}
+ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 0.4rem 0rem;
+}
+ul li:hover {
+  background-color: rgb(206, 202, 202);
+}
+ul li:last-child {
+  margin-bottom: 2rem;
+}
+main {
+  width: 60%;
+}
+.search-bar {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border: 2px solid var(--action-color);
+}
+.note-nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding-top: 1rem;
+}
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding-top: 1rem;
+  margin-top: 2rem;
+}
+.note-footer span {
+  color: gray;
+}
+section {
+  background: #f0f0f0;
+  min-height: 8rem;
+  padding: 0rem 1rem;
+}
+.icon {
+  color: gray;
+  margin-right: 0.5rem;
+  margin-top: 0.4rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.icon:hover {
+  color: rgb(100, 99, 99);
+}
+.title {
+  font-size: 2rem;
+  color: var(--action-color);
+}
+.highlight {
+  color: var(--gradient-color);
+}
+.note-title {
+  color: var(--gradient-color);
+  opacity: 0.9;
+}
+nav {
+  background-color: #f0f0f0;
+}
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.note-body {
+  margin: 0.5rem 0rem;
+}
