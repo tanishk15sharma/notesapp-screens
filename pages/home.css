@@ -101,3 +101,6 @@ nav {
 .note-body {
   margin: 0.5rem 0rem;
 }
+.active {
+  color: black;
+}
