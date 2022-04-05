@@ -1,17 +1,13 @@
 .note-container {
-  border: 1px solid red;
-  margin: 2rem 3rem;
+  margin: 2rem 5rem;
 }
 .wrapper {
-  border: 1px solid gold;
   display: flex;
   padding: 2rem 0rem;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 aside {
-  border: 1px solid green;
-  padding: 1rem;
-  width: 30%;
+  width: 26%;
 }
 .note-btn {
   padding: 0.5rem 1rem;
@@ -30,9 +26,20 @@ aside {
 ul li {
   /* border: 1px solid red; */
   margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+ul li:hover {
+  background-color: rgb(206, 202, 202);
+}
+ul li:last-child {
+  margin-bottom: 2rem;
 }
 main {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: 60%;
 }
 .search-bar {
@@ -40,6 +47,7 @@ main {
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  border: 2px solid var(--action-color);
 }
 .note-nav {
   display: flex;
@@ -59,5 +67,14 @@ section {
 .title {
   font-size: 2rem;
   color: var(--action-color);
-  text-decoration: underline var(--gradient-color);
+}
+.highlight {
+  color: var(--gradient-color);
+}
+.note-title {
+  color: var(--gradient-color);
+  opacity: 0.9;
+}
+nav {
+  background-color: #f0f0f0;
 }
