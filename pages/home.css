@@ -42,7 +42,7 @@ main {
   width: 60%;
 }
 .search-bar {
-  width: 100%;
+  width: 94%;
   padding: 0.5rem 1rem;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -103,4 +103,25 @@ nav {
 }
 .active {
   color: black;
+}
+.filter-container {
+  display: flex;
+  flex-direction: column;
+}
+.filter-icon {
+  background-color: var(--gradient-color);
+  color: var(--primary-color);
+  padding: 0.55rem 0.9rem;
+  right: 1%;
+  position: absolute;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.filter-icon:hover {
+  color: var(--gradient-color);
+  background-color: var(--primary-color);
+}
+.relative {
+  /* border: 1px solid red; */
+  position: relative;
 }
