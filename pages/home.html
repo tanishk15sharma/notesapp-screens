@@ -51,25 +51,25 @@
             <input type="text" placeholder="search" class="search-bar" />
             <span class="material-icons filter-icon"> filter_alt </span>
           </div>
-          <div class="filters-wrapper">
+          <div class="filters-wrapper" id="filterBox">
             <h3>SORT AND FILTER NOTES</h3>
             <div class="filter-container">
               <h4>SORT BY</h4>
-              <span>
+              <span class="filter-input">
                 <input type="radio" name="sort" id="new" />
                 <label for="new">Newest First</label>
               </span>
-              <span>
+              <span class="filter-input">
                 <input type="radio" name="sort" id="old" />
                 <label for="old">Oldest First</label>
               </span>
 
               <h4>FILTER BY</h4>
-              <span>
+              <span class="filter-input">
                 <input type="radio" name="filter" id="priority" />
                 <label for="priority">Priority</label>
               </span>
-              <span>
+              <span class="filter-input">
                 <input type="radio" name="filter" id="label" />
                 <label for="label">Label</label>
               </span>
@@ -141,5 +141,13 @@
         </main>
       </div>
     </div>
+    <script>
+      const filterIcon = document.querySelector(".filter-icon");
+      const filterBox = document.querySelector("#filterBox");
+      console.log(filterBox);
+      filterIcon.addEventListener("click", () => {
+        filterBox.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>

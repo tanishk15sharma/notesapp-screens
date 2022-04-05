@@ -114,14 +114,34 @@ nav {
   padding: 0.55rem 0.9rem;
   right: 1%;
   position: absolute;
-  transition: all 0.4s;
+  transition: all 0.2s;
   cursor: pointer;
 }
 .filter-icon:hover {
-  color: var(--gradient-color);
-  background-color: var(--primary-color);
+  background-color: #247c42;
 }
 .relative {
-  /* border: 1px solid red; */
   position: relative;
+}
+.filters-wrapper {
+  position: absolute;
+  border: 2px solid var(--gradient-color);
+  z-index: 3;
+  right: 6.4%;
+  top: 23%;
+  background-color: var(--secondary-text);
+  padding: 1rem;
+  width: 20%;
+  display: none;
+}
+.show {
+  display: block;
+}
+.filters-wrapper h3 {
+  border-bottom: 2px solid var(--action-color);
+  margin-bottom: 1rem;
+}
+.filter-input {
+  margin-left: 2rem;
+  margin-top: 0.3rem;
 }
