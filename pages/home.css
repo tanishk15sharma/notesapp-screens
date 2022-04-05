@@ -1,0 +1,23 @@
+.note-container {
+  border: 1px solid red;
+  margin: 2rem 3rem;
+}
+.wrapper {
+  border: 1px solid gold;
+  display: flex;
+  padding: 2rem 0rem;
+}
+aside {
+  border: 1px solid green;
+}
+main {
+  border: 2px solid blue;
+  width: 60%;
+}
+.search-bar {
+  width: 100%;
+}
+.note-nav {
+  display: flex;
+  justify-content: space-between;
+}
